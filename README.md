@@ -20,7 +20,7 @@ PEP440 is the schema used to describe the versions of Ansible.
 Name | Description
 --- | ---
 [just1not2.pm2.pm2_facts](./docs/pm2_facts_module.rst)|Return PM2 information as fact data
-[just1not2.pm2.pm2_process](./pm2_process_module.rst)|Manage PM2 processes
+[just1not2.pm2.pm2_process](./docs/pm2_process_module.rst)|Manage PM2 processes
 
 
 ## Installing this collection
