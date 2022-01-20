@@ -181,15 +181,15 @@ class Pm2Process():
 
         return delete_and_restart
 
-    def restart(self, name, file):
+    def restart(self, file):
         ''' Restarts the process '''
 
-        return self.execute_ecosystem_action("restart", name, file)
+        return self.execute_ecosystem_action("restart", self.name, file)
 
-    def reload(self, name, file):
+    def reload(self, file):
         ''' Reloads the process '''
 
-        return self.execute_ecosystem_action("reload", name, file)
+        return self.execute_ecosystem_action("reload", self.name, file)
 
     def stop(self):
         ''' Stops the process '''
