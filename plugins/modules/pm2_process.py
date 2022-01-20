@@ -35,6 +35,7 @@ options:
   name:
     description:
       - The name of the process.
+      - If this option is set to *, the module will match all processes.
     type: str
     required: true
   state:
