@@ -26,7 +26,7 @@ options:
     default: yes
   chdir:
     description:
-      - The path to the directory from which the script runs.
+      - The working directory of the script.
     type: path
     version_added: "1.2.0"
   executable:
