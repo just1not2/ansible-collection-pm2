@@ -42,6 +42,7 @@ class Pm2Env():
             self.processes.append(
                 Pm2Process(
                     self,
+                    cwd=process["pm2_env"]["pm_cwd"],
                     file=process["pm2_env"]["pm_exec_path"],
                     id=process["pm_id"],
                     interpreter=process["pm2_env"]["exec_interpreter"],
@@ -154,6 +155,7 @@ class Pm2Process():
         ''' Returns a dictionary translation of the process '''
 
         return dict(
+            cwd=self.cwd,
             file=self.file,
             id=self.id,
             interpreter=self.interpreter,
